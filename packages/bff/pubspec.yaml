@@ -1,0 +1,9 @@
+name: bff
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+dependencies: 
+  proto_dart:
+    path: ../proto_dart
+  grpc: ^3.0.2
+  protobuf: ^2.0.0

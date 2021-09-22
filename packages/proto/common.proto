@@ -1,0 +1,12 @@
+syntax = "proto3";
+package common;
+
+message HiParams {}
+
+service Welcome {
+    rpc sayHi(HiParams) returns (Hello);
+}
+
+message Hello {
+    string text = 1;
+}
