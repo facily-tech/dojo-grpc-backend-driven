@@ -1,6 +1,8 @@
 syntax = "proto3";
 package common;
 
+// Hello Service
+
 message HiParams {}
 
 service Welcome {
@@ -9,4 +11,69 @@ service Welcome {
 
 message Hello {
     string text = 1;
+}
+
+// Content Service
+
+message PageParams {
+    string key = 1;
+}
+
+service Content {
+    rpc GetPage(PageParams) returns (Page) {}
+    rpc StreamPage(PageParams) returns (stream Component) {}
+}
+
+message Page {
+    PageData data = 1;
+    repeated Component components = 15;
+}
+
+message PageData {
+    string id = 1;
+    string key = 2;
+}
+
+message Header {
+    message Item {
+        string icon = 1;
+        string title = 2;
+        string link = 3;
+    }
+
+    string id = 1;
+    string title = 2;
+    repeated Item items = 15;
+}
+
+message Carrossel {
+    message Item {
+        string image = 1;
+        string text = 2;
+    }
+
+    string id = 1;
+    repeated Item items = 15;
+}
+
+
+message ProductGallery {
+    message Product {
+        string image = 1;
+        string price = 2;
+        string description = 3;
+        string title = 4;
+    }
+
+    string id = 1;
+    repeated Product products = 15;
+}
+
+message Component {
+    oneof component {
+        PageData pageData = 1;
+        Header header = 2;
+        Carrossel carrossel = 3;
+        ProductGallery productGallery = 5;
+    } 
 }

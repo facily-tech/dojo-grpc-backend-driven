@@ -7,3 +7,4 @@ dependencies:
     path: ../proto_dart
   grpc: ^3.0.2
   protobuf: ^2.0.0
+  http: ^0.13.4

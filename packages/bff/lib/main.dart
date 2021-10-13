@@ -1,16 +1,11 @@
+import 'package:bff/services/content_service.dart';
 import 'package:grpc/grpc.dart';
-import 'package:proto_dart/common.pbgrpc.dart';
-
-class WelcomeService extends WelcomeServiceBase {
-  @override
-  Future<Hello> sayHi(ServiceCall call, HiParams request) async {
-    return Hello(text: 'World');
-  }
-}
+import 'services/welcome_service.dart';
 
 Future<void> main() async {
   final server = Server([
     WelcomeService(),
+    ContentService(),
   ]);
   server.serve(port: 5000);
   print('Listening on 5000');

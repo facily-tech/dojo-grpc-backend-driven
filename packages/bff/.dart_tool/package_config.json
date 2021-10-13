@@ -51,9 +51,9 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///Users/alanleite/.pub-cache/hosted/pub.dartlang.org/http-0.13.3",
+      "rootUri": "file:///Users/alanleite/.pub-cache/hosted/pub.dartlang.org/http-0.13.4",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.14"
     },
     {
       "name": "http2",
@@ -76,12 +76,6 @@
     {
       "name": "path",
       "rootUri": "file:///Users/alanleite/.pub-cache/hosted/pub.dartlang.org/path-1.8.0",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "pedantic",
-      "rootUri": "file:///Users/alanleite/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -128,7 +122,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-10-05T20:18:27.028056Z",
+  "generated": "2021-10-13T15:13:15.815446Z",
   "generator": "pub",
   "generatorVersion": "2.14.2"
 }
