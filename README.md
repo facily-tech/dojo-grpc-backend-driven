@@ -13,3 +13,27 @@ Each session takes one duration hour, and you will find them separated by branch
 - Follow SETUP.md
 - Generate protobuff classes by running generate.sh script.
 - Run the server: dart packages/bff/lib/main.dart  
+
+# Day two
+
+- Creating the flutter app, runs it in packages folder:
+
+```flutter create app```
+
+```flutter run -d chrome```
+
+- Add proto_dart dependency 
+
+```
+  proto_dart:
+    path: ../proto_dart
+```
+
+- Implementation
+
+https://grpc.io/docs/languages/dart/quickstart/#update-the-client
+
+- About authentication
+
+https://grpc.io/docs/guides/auth/
+
